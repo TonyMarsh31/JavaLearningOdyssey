@@ -1,0 +1,1 @@
+建议参考在Notion上的笔记整理 → [设计模式原则](https://seasidetown.notion.site/321165dcfa674e8f8c3b59102aa022a5)

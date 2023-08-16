@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Annotation/Annotation.iml" filepath="$PROJECT_DIR$/Annotation/Annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassLoaderAndReflect/ClassLoaderAndReflect.iml" filepath="$PROJECT_DIR$/ClassLoaderAndReflect/ClassLoaderAndReflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Enum/Enum.iml" filepath="$PROJECT_DIR$/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTML_CSS_JavaScript/HTML_CSS_JavaScript.iml" filepath="$PROJECT_DIR$/HTML_CSS_JavaScript/HTML_CSS_JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ItHEIMa-Java.iml" filepath="$PROJECT_DIR$/ItHEIMa-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaCommonAPI/JavaCommonAPI.iml" filepath="$PROJECT_DIR$/JavaCommonAPI/JavaCommonAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Junit/Junit.iml" filepath="$PROJECT_DIR$/Junit/Junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logback/Logback.iml" filepath="$PROJECT_DIR$/Logback/Logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Multithreading/Multithreading.iml" filepath="$PROJECT_DIR$/Multithreading/Multithreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWorkPrograming/NetWorkPrograming.iml" filepath="$PROJECT_DIR$/NetWorkPrograming/NetWorkPrograming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP-InfoManager/OOP-InfoManager.iml" filepath="$PROJECT_DIR$/OOP-InfoManager/OOP-InfoManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StreamAndIO/StreamAndIO.iml" filepath="$PROJECT_DIR$/StreamAndIO/StreamAndIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XMLDemo/XMLDemo.iml" filepath="$PROJECT_DIR$/XMLDemo/XMLDemo.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/AJAX" />
+    <file type="web" url="file://$PROJECT_DIR$/brand-case" />
+    <file type="web" url="file://$PROJECT_DIR$/CookieAndSession" />
+    <file type="web" url="file://$PROJECT_DIR$/JSP-Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/MVC-Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/Servlet-RequestResponse-Demo" />
+    <file type="web" url="file://$PROJECT_DIR$/ServletDemo" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/MybatisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/ServletDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/Servlet-RequestResponse-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/JSP-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/MVC-Demo/pom.xml" />
+        <option value="$PROJECT_DIR$/CookieAndSession/pom.xml" />
+        <option value="$PROJECT_DIR$/AJAX/pom.xml" />
+        <option value="$PROJECT_DIR$/brand-case/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

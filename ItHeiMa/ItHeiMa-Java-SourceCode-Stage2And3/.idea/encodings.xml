@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AJAX/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AJAX/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CookieAndSession/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CookieAndSession/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JSP-Demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JSP-Demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MVC-Demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MVC-Demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MybatisDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MybatisDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NetWorkPrograming/src/socketDemo/UDPDemo/socketdemo2/ClientDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-RequestResponse-Demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Servlet-RequestResponse-Demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brand-case/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brand-case/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

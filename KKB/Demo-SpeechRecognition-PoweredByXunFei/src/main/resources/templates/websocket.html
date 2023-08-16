@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/jquery/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+
+<h3>基于web socket 点对点通讯</h3>
+<label for="userId">【当前用户ID】：</label><input id="userId" name="userId" type="text" value="10"><br><br>
+<label for="toUserId">【对方用户ID】：</label><input id="toUserId" name="toUserId" type="text" value="20"><br><br>
+<label for="sendMsg">【发送信息】： </label><input id="sendMsg" name="sendMsg" type="text" value="hello websocket"><br><br>
+【接收信息】： <span id="receiveMsg" style="color: purple"></span><br><br>
+<button id="openBtn">开启socket</button>
+<br><br>
+<button id="sendBtn">发送消息</button>
+<br><br>
+
+<script>
+    let socket;
+
+    $(function () {
+        //点击开启socket后的回调函数
+        $("#openBtn").click(function () {
+            if (typeof (WebSocket) == "undefined") {
+                console.log("您的浏览器不支持websocket");
+            } else {
+                console.log("您的浏览器支持websocket");
+                //实现化websocket对象，指定要连接的服务器地址与端口 建立连接
+                let userId = $("#userId").val();
+                let socketUrl = "ws://localhost:22599/websocket/" + userId;
+                console.log(socketUrl)
+                //初始化WebSocket对象
+                if (socket != null) {
+                    socket.close();
+                    socket = null;
+                }
+                socket = new WebSocket(socketUrl);
+                //设置回调函数
+                //打开事件
+                socket.onopen = function () {
+                    console.log("websocket已打开");
+                    //socket.send("这是来自客户端的消息”+location.href+new Date());
+                };
+                //关闭事件
+                socket.onclose = function () {
+                    console.log("websocket已关闭");
+                };
+                //异常事件
+                socket.onerror = function () {
+                    console.log("websocket发生了错误");
+                };
+                //获得消息事件
+                socket.onmessage = function (msg) {
+                    console.log(msg.data);
+                    $("#receiveMsg").html(msg.data);
+                };
+            }
+        });
+
+        //点击发送消息按钮后的回调函数
+        $("#sendBtn").click(function () {
+            if (typeof (WebSocket) == "undefined") {
+                console.log("您的浏览器不支持websocket");
+            } else {
+                console.log("您的浏览器支持websocket");
+                //获取要发送的信息，将其先用对象存储
+                let Msg = {
+                    "toUserId": $("#toUserId").val(),
+                    "sendMsg": $("#sendMsg").val()
+                };
+                //将对象转换为json字符串
+                let msg = JSON.stringify(Msg);
+                //发送消息
+                console.log(msg);
+                socket.send(msg)
+            }
+        });
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3-背景</title>
+	<style>
+		div {
+			width: 1200px;
+			height: 200px;
+			line-height: 100px;
+			text-align: center;
+			margin: 15px;
+			border: 1px solid red;
+		}
+
+		.bg1 {
+			/*不同的背景图像和图像用逗号隔开，所有的图片中显示在最顶端的为第一张。*/
+			background-image: url(img/bg.jpg), url(img/cat.jpg);
+			background-position: left top, right bottom;
+			background-repeat: no-repeat, repeat;
+
+			/*上面的可以缩写为：
+              background: url(img/bg.png) left top no-repeat, url(img/cat.jpg) right bottom repeat;
+              */
+		}
+
+		.bg2 {
+			background: url(img/cat.jpg);
+			/* background-size指定背景图像的大小。
+             * CSS3以前，背景图像大小由图像的实际大小决定。
+             * CSS3中我们可以自己指定背景图片的大小。
+             * 大小取值像素或百分比都可以，如果是百分比，相对于父元素的宽度和高度的百分比的大小。*/
+			background-size: 600px 100%;
+			background-repeat: no-repeat;
+		}
+
+		.bg3 {
+			border: 10px solid rgba(255, 0, 0, 0.5);
+			border-color: rgba(0, 0, 255, 0.1);
+			padding: 20px;
+			background: url(img/cat.jpg);
+			background-repeat: no-repeat;
+			background-size: 600px 100%;
+			/**
+             * background-origin 属性可以指定背景图像的位置区域。
+                共有content-box, padding-box,和 border-box三个取值。
+                content-box：背景只出现在内容部分，padding和border中没有。
+                padding-box：背景出现在内容和padding部分，border中没有。
+                border-box：背景出现在内容、padding、border中。
+             */
+			background-origin: content-box;
+		}
+
+		.bg3-2 {
+			background-origin: padding-box;
+		}
+
+		.bg3-3 {
+			background-origin: border-box;
+		}
+
+		.bg4 {
+			border: 10px dotted black;
+			padding: 35px;
+			background: lightcoral;
+			background-clip: content-box;
+		}
+
+		.bg4-2 {
+			background-clip: padding-box;
+		}
+
+		.bg4-3 {
+			background-clip: border-box;
+		}
+	</style>
+</head>
+<body>
+<div class="bg1">多图片背景</div>
+<div class="bg2">指定背景图片大小</div>
+<div class="bg3">指定背景铺设区域-content-box</div>
+<div class="bg3 bg3-2">指定背景铺设区域-padding-box</div>
+<div class="bg3 bg3-3">指定背景铺设区域-border-box</div>
+<div class="bg4">背景裁切-content-box</div>
+<div class="bg4 bg4-2">背景裁切-padding-box</div>
+<div class="bg4 bg4-3">背景裁切-border-box</div>
+</body>
+</html>

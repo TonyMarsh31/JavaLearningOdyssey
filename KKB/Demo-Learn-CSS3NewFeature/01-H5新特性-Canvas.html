@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Canvas画布</title>
+	</head>
+
+	<body>
+		<!--
+			canvas：定义一个画布，在网页中是一个矩形框，默认没有边框和内容
+					边框通过样式自己添加；
+					canvas元素本身没有绘图能力，内容通过脚本绘制。
+		-->
+		<img src="img/cat.jpg" id="my-cat"  alt="一张喵咪的图片"/>
+		<canvas id="myCanvas1" style="width: 300px; height: 200px; border: 1px solid red;"></canvas>
+		<canvas id="myCanvas2" style="width: 300px; height: 200px; border: 1px solid red;"></canvas>
+		<canvas id="myCanvas3" style="width: 300px; height: 200px; border: 1px solid red;"></canvas>
+
+		<button type="button" onclick="printRect()">绘制矩形</button>
+		<button type="button" onclick="printLine()">绘制线条</button>
+		<button type="button" onclick="printImg()">绘制图片</button>
+	</body>
+
+</html>
+<script>
+	function printRect() {
+		//1、获取一个画布
+		let myCanvas = document.getElementById("myCanvas1");
+		/* 2、创建context对象,
+		 * 		getContext("2d") 对象是内建的 HTML5 对象，
+		 * 		拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。
+		 */
+		let ctx = myCanvas.getContext("2d");
+		//3、在画布上绘制一个红色矩形
+		ctx.fillStyle = "red"; //设置fillStyle属性可以是CSS颜色，渐变，或图案。fillStyle 默认设置是#000000（黑色）。
+		ctx.fillRect(0, 0, 200, 100); //fillRect(x,y,width,height) 方法定义了矩形当前的填充方式。
+	}
+
+	function printLine() {
+		let myCanvas = document.getElementById("myCanvas2");
+		let ctx = myCanvas.getContext("2d");
+		ctx.moveTo(0, 0); //定义线条开始坐标
+		ctx.lineTo(200, 100); //定义线条结束坐标
+		ctx.stroke(); //该方法来绘制线条
+		ctx.moveTo(200, 100);
+		ctx.lineTo(100, 200);
+		ctx.stroke();
+	}
+
+	function printImg() {
+		let img = document.getElementById("my-cat");
+		let myCanvas = document.getElementById("myCanvas3");
+		let ctx = myCanvas.getContext("2d");
+		ctx.drawImage(img, 0, 0);
+	}
+</script>
